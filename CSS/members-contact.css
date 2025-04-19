@@ -1,0 +1,53 @@
+.board-members{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.top-member{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.member-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid hsl(0, 0%, 59%);
+}
+
+
+.member-card{
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s, ease;
+}
+
+.member-card p{
+    margin-bottom: 10px;
+}
+
+.mail-link{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    
+}
+
+.mail-link:hover{
+    text-decoration: underline;
+    color: #e63946;
+}
