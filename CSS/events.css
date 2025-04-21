@@ -1,0 +1,53 @@
+.events{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 200px;
+}
+
+.title{
+    text-align: center;
+    color: #c00;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.event{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.event-date{
+    color: #c00;
+    font-weight: bold;
+    width: 150px;
+    max-width: 100px;
+}
+
+.event-details{
+    flex: 2;
+}
+
+.event-details h3{
+    margin: 0 0 10px 0;
+}
+
+.event-details p{
+    margin: 0 0 10px 0;
+}
+
+
+.event-time{
+    flex: 1;
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid #c00;;
+    margin: 20px 0;
+}
