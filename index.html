@@ -20,27 +20,7 @@
 
 <body>
     <div class="scroll-indicator"></div>
-    <div id="header">
-        <div class="logo">
-            <a href="index.html"><img src="./IMG/AMPP-Croatia-Colour.png" alt="AMPP chapter Croatia"></a>
-        </div>
-        <div id="header-links">
-            <div id="header-close" class="header-link" onclick="hideHamburger()">&times;</div>
-            <a href="index.html" class="header-link header-link-active">Home</a>
-            <a href="events.html" class="header-link">Events</a>
-            <a href="courseandcert.html" class="header-link">Courses & Certifications</a>
-            <a href="about.html" class="header-link">About Us</a>
-            <a href="gallery.html" class="header-link">Gallery</a>
-            <a href="members-contact.html" class="header-link">Members & Contact</a>
-        </div>
-        <div id="header-open" class="header-link" onclick="showHamburger()">
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-        </div>
-    </div>
+    <div id="header-container"></div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>^</strong></button>
 
@@ -85,37 +65,24 @@
             </p>
             <a href="https://www.ampp.org/membership/membership-types/corporate-membership" target="_blank" class="join-btn">Join Now</a>
           </div>
+
+          
+        <!-- Student Membership -->
+        <div class="membership-box">
+          <h3>Student Membership</h3>
+          <p>
+            Join the AMPP Croatia Chapter as a Student Member and kickstart your career in materials protection and performance. This free membership is open to full-time students enrolled in accredited universities or colleges and offers access to a global network of professionals, career resources, and educational tools. You'll gain exposure to the industry through webinars, podcasts, volunteer opportunities, and publications like Materials Performance and CoatingsPro Magazine.
+          </p>
+          <p>
+            As a student member, you can apply for scholarships, receive discounts on courses and events, and explore leadership opportunities by engaging with local and international chapters. Whether you're looking to expand your knowledge, grow your network, or take the first step into the industry, AMPP’s Student Membership provides the tools and support to help you succeed.
+          </p>
+          <a href="https://www.ampp.org/membership/membership-types/student-membership" target="_blank" class="join-btn">Join Now</a>
+        </div>
+      </div>
         </div>
       </section>
 
-
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-col">
-            <h3><span style="color: #e63946;">AMPP Chapter Croatia</span></h3>
-            <p><img src="https://img.icons8.com/ios-glyphs/20/ffffff/email.png" alt="email icon" style="vertical-align: middle;"> 
-               <a href="mailto:amppcroatia@gmail.com">amppcroatia@gmail.com</a>
-            </p>
-          </div>
-      
-          <div class="footer-col">
-            <h4>AMPP CHAPTER CROATIA</h4>
-            <ul>
-              <li><a href="index.html">AMPP Chapter Croatia</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="members-contact.html">Members</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="courseandcert.html">Courses and Certifications</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="members-contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-      
-    
-
-
+      <div id="footer-container"></div>
 
     <script src="Scripts/index.js"></script>
 </body>

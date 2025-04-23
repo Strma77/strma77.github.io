@@ -33,7 +33,7 @@
 
 .membership-options {
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
   justify-content: center;
   flex-wrap: wrap;
 }

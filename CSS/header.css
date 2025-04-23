@@ -8,15 +8,11 @@
   src: url("fonts/TimesNewRoman.ttf") format("truetype");
 }
 
-body {
-  background-color: hsl(0, 0%, 100%);
-}
-
 .scroll-indicator {
   position: fixed;
   top: 0;
   left: 0;
-  height: 0.3125rem; /* 5px = 0.3125rem */
+  height: 0.3125rem;
   background-color: rgb(255, 0, 0);
   width: 0;
   transition: width 0.2s ease;
@@ -31,8 +27,10 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: hsl(0, 0%, 9%);
+  background-color: #cae4ff  ;
   box-shadow: 0 2px 10px hsla(0, 100%, 3%, 0.548);
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
 }
 
 .logo img {
@@ -64,13 +62,7 @@ body {
   color: hsl(221, 100%, 50%);
   transform: scale(1.1);
   transition: 0.3s;
-
   background-image: linear-gradient(to right, red, blue);
-}
-
-.header-link-active {
-  text-decoration: underline;
-  font-weight: bold;
 }
 
 #header-open {
@@ -78,19 +70,19 @@ body {
 }
 
 .hamburger {
-  display: none; /* Hide the hamburger menu by default */
+  display: none;
   flex-direction: column;
-  background: none; /* Remove background */
-  border: none; /* Remove border */
-  padding: 0; /* Remove padding */
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .line {
-  width: 20px; /* Width of the lines */
-  height: 3px; /* Height of the lines */
-  background-color: #cacaca; /* Line color */
-  margin: 2px 0; /* Spacing between lines */
-  transition: all 0.3s; /* Transition for line animations */
+  width: 20px;
+  height: 3px;
+  background-color: #272727;
+  margin: 2px 0;
+  transition: all 0.3s;
 }
 
 #header-close {
@@ -101,23 +93,51 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+  #header {
+    align-items: flex-start;
+  }
+
   #header-links {
     display: none;
-    padding: 20px 10px;
+    width: 100%;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: white;
+    background: linear-gradient(to bottom, #001f3f, #ffffff); 
+    padding: 1rem;
+    animation: fadeDown 0.3s ease-out;
+    color: #2f2f2f;
   }
+
+  #header-links.show {
+    display: flex;
+  }
+
   #header-open {
     display: flex;
   }
+
   .hamburger {
-    display: flex; /* Show the hamburger menu on mobile */
+    display: flex;
+  }
+
+  #header-close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
 }
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Scroll to Top Button */
 #myBtn {

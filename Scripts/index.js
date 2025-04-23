@@ -1,18 +1,41 @@
+// ===== Load Header & Footer =====
+async function loadHTML(selector, url, callback) {
+  try {
+    const res = await fetch(url);
+    const html = await res.text();
+    document.querySelector(selector).innerHTML = html;
+    if (callback) callback(); // run additional logic (e.g., event setup) after load
+  } catch (err) {
+    console.error(`Error loading ${url}:`, err);
+  }
+}
+
+function initHeader() {
+  // Re-fetch header DOM elements (since they’re now in the DOM after .innerHTML)
+  headerLinks = document.getElementById("header-links");
+  headerOpen = document.getElementById("header-open");
+  headerClose = document.getElementById("header-close");
+}
+
+// First load the header, then initialize header-related functions
+loadHTML("#header-container", "../HTMLs/header.html", initHeader);
+loadHTML("#footer-container", "../HTMLs/footer.html");
+
 // JavaScript to toggle the navbar
 let headerLinks = document.getElementById("header-links");
 let headerOpen = document.getElementById("header-open");
 let headerClose = document.getElementById("header-close");
 
 function showHamburger() {
-    headerLinks.style.display = "flex";
-    headerClose.style.display = "flex";
-    headerOpen.style.display = "none";
+  headerLinks.classList.add("show");
+  headerClose.style.display = "flex";
+  headerOpen.style.display = "none";
 }
 
 function hideHamburger() {
-    headerLinks.style.display = "none";
-    headerClose.style.display = "none";
-    headerOpen.style.display = "flex";
+  headerLinks.classList.remove("show");
+  headerClose.style.display = "none";
+  headerOpen.style.display = "flex";
 }
 
 
@@ -49,6 +72,5 @@ function scrollFunction() {
 
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
