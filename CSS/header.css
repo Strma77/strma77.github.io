@@ -101,7 +101,7 @@
     display: none;
     width: 100%;
     flex-direction: column;
-    background: linear-gradient(to bottom, #001f3f, #ffffff); 
+    background: whitesmoke; 
     padding: 1rem;
     animation: fadeDown 0.3s ease-out;
     color: #2f2f2f;
