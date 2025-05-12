@@ -1,0 +1,190 @@
+const langData = {
+    en: {
+        "about-ampp": "About AMPP",
+        "about-ampp1": "The Association for Materials Protection and Performance (AMPP) is the world's leading authority in corrosion control and protective coatings. Created from the merger of NACE International and SSPC, AMPP represents a unified voice for thousands of professionals across more than 130 countries.",
+        "about-ampp2": "AMPP is dedicated to improving the lives of people around the world by protecting infrastructure, assets, and the environment from the damaging effects of corrosion and degradation. From research and training to certification and standard development, AMPP works to equip the global community with the tools and knowledge to safeguard materials and structures.",
+        "our-mission": "Our Mission",
+        "mission1": "The AMPP Student Chapter Croatia is committed to inspiring and guiding the next generation of corrosion and materials professionals in our region. Our mission is to create an environment of learning, innovation, and collaboration among students, industry leaders, and academic institutions.",
+        "mission2": "We aim to provide valuable opportunities for professional development through technical workshops, lectures, and hands-on experiences. By connecting young minds with global experts, we help build a strong foundation for future contributions to safer, longer-lasting infrastructure in Croatia and the world.",
+        "starting-point": "Choose your starting point",
+        "already-a-member": "Already an AMPP Member?",
+        "already-a-member1": "If you are already an AMPP member and located in Croatia your profile will already be connected to the AMPP Croatia Student Chapter. To receive updates on our upcoming training and events or chapter news, please login to and ensure you have your preferences set to receive these updates.",
+        "individual": "Individual Membership",
+        "individual1": "Becoming an AMPP member gives you access to exclusive professional development opportunities, networking events, and industry resources that will help you get ahead and stay ahead.",
+        "individual2": "Connect with other professionals, learn from industry leaders, and stay current with the latest trends and advancements through your membership and help shape the future of the materials protection and performance. Your membership also provides discounts on events and access to exclusive Member-only resources.",
+        "individual3": "If you are new to AMPP you will want to If you are a returning member looking to renew your membership just Already logged in? Click the button below.",
+        "individual4": "create your user account to join",
+        "individual5": "login",
+        "join-now": "Join Now",
+        "corporate": "Corporate Membership",
+        "corporate1": "Take your organziation higher with an AMPP Corporate Membership. Being an AMPP Corporate member gives you exposure to the industry and AMPP members worldwide. It also provides your employees with tools to stay current and develop professionally, access to networking events, industry resources, and exclusive professional development opportunities that will help your organization get ahead and stay ahead.",
+        "corporate2": "Connect your organization with AMPP members worldwide while increasing your visibility within the market and with job seekers. An AMPP Corporate Membership provides concrete value to your organization and employees.",
+        "student": "Student Membership",
+        "student1": "Join the AMPP Croatia Chapter as a Student Member and kickstart your career in materials protection and performance. This free membership is open to full-time students enrolled in accredited universities or colleges and offers access to a global network of professionals, career resources, and educational tools. You'll gain exposure to the industry through webinars, podcasts, volunteer opportunities, and publications like Materials Performance and CoatingsPro Magazine.",
+        "student2": "As a student member, you can apply for scholarships, receive discounts on courses and events, and explore leadership opportunities by engaging with local and international chapters. Whether you're looking to expand your knowledge, grow your network, or take the first step into the industry, AMPP’s Student Membership provides the tools and support to help you succeed."        
+    },
+
+    hr: {
+        "about-ampp": "O AMPP-u",
+        "about-ampp1": "Udruga za zaštitu i učinkovitost materijala (AMPP) vodeće je svjetsko tijelo za kontrolu korozije i zaštitne premaze. Nastala spajanjem NACE International i SSPC, AMPP predstavlja jedinstveni glas tisućama stručnjaka u više od 130 zemalja.",
+        "about-ampp2": "AMPP je posvećen poboljšanju života ljudi diljem svijeta zaštitom infrastrukture, imovine i okoliša od štetnih učinaka korozije i propadanja. Kroz istraživanja i obuke do certifikacije i razvoja standarda, AMPP pruža globalnoj zajednici alate i znanje za očuvanje materijala i struktura.",
+        "our-mission": "Naša misija",
+        "mission1": "AMPP Studentski ogranak Hrvatska predan je nadahnuću i usmjeravanju sljedeće generacije stručnjaka za koroziju i materijale u našoj regiji. Naša misija je stvaranje okruženja za učenje, inovacije i suradnju među studentima, liderima iz industrije i akademskim institucijama.",
+        "mission2": "Cilj nam je pružiti vrijedne prilike za profesionalni razvoj kroz tehničke radionice, predavanja i praktične aktivnosti. Povezujući mlade umove s globalnim stručnjacima, gradimo čvrste temelje za budući doprinos sigurnijoj i dugotrajnijoj infrastrukturi u Hrvatskoj i svijetu.",
+        "starting-point": "Odaberite svoju početnu točku",
+        "already-a-member": "Već ste član AMPP-a?",
+        "already-a-member1": "Ako ste već član AMPP-a i nalazite se u Hrvatskoj, vaš će profil već biti povezan s AMPP Studentskim ogrankom Hrvatska. Za primanje obavijesti o nadolazećim obukama, događanjima i vijestima ogranka, prijavite se i provjerite jeste li postavili željene postavke.",
+        "individual": "Pojedinačno članstvo",
+        "individual1": "Postajanjem članom AMPP-a dobivate pristup ekskluzivnim mogućnostima za profesionalni razvoj, mrežnim događanjima i industrijskim resursima koji će vam pomoći da napredujete i ostanete u prednosti.",
+        "individual2": "Povežite se s drugim profesionalcima, učite od lidera iz industrije i ostanite u tijeku s najnovijim trendovima i napretcima putem članstva. Također, članstvo uključuje popuste na događanja i pristup ekskluzivnim resursima dostupnima samo članovima.",
+        "individual3": "Ako ste novi u AMPP-u, kreirajte korisnički račun. Ako obnavljate članstvo ili ste već prijavljeni, kliknite gumb ispod.",
+        "individual4": "kreirajte korisnički račun za pridruživanje",
+        "individual5": "prijava",
+        "join-now": "Pridruži se sada",
+        "corporate": "Korparativno članstvo",
+        "corporate1": "Podignite svoju organizaciju na višu razinu s AMPP Korporativnim članstvom. Biti član omogućuje vam vidljivost unutar industrije i među AMPP članovima diljem svijeta. Također, vaši zaposlenici dobivaju alate za profesionalni razvoj, pristup mrežnim događanjima, resursima i ekskluzivnim edukacijskim mogućnostima.",
+        "corporate2": "Povežite svoju organizaciju s AMPP članovima širom svijeta i povećajte svoju vidljivost na tržištu i među tražiteljima zaposlenja. AMPP Korporativno članstvo donosi stvarnu vrijednost vašoj organizaciji i zaposlenicima.",
+        "student": "Studentsko članstvo",
+        "student1": "Pridružite se AMPP Hrvatska ogranku kao studentski član i započnite svoju karijeru u zaštiti i učinkovitosti materijala. Ovo besplatno članstvo otvoreno je za redovite studente upisane na akreditirane sveučilišta ili fakultete i omogućuje pristup globalnoj mreži stručnjaka, karijernim resursima i edukacijskim alatima. Steći ćete uvid u industriju putem webinara, podcasta, volonterskih prilika i publikacija kao što su Materials Performance i CoatingsPro Magazine.",
+        "student2": "Kao studentski član možete se prijaviti za stipendije, ostvariti popuste na tečajeve i događanja te istražiti prilike za vodstvo kroz sudjelovanje u lokalnim i međunarodnim ograncima. Bilo da želite proširiti svoje znanje, izgraditi mrežu ili napraviti prvi korak u industriju, AMPP Studentsko članstvo pruža alate i podršku potrebnu za uspjeh."
+    },
+
+    es: {
+        "about-ampp": "Acerca de AMPP",
+        "about-ampp1": "La Asociación para la Protección y el Desempeño de Materiales (AMPP) es la principal autoridad mundial en control de la corrosión y recubrimientos protectores. Creada a partir de la fusión de NACE International y SSPC, AMPP representa una voz unificada para miles de profesionales en más de 130 países.",
+        "about-ampp2": "AMPP está comprometida con mejorar la vida de las personas en todo el mundo mediante la protección de infraestructuras, activos y el medio ambiente contra los efectos dañinos de la corrosión y el deterioro. Desde la investigación y formación hasta la certificación y el desarrollo de normas, AMPP trabaja para dotar a la comunidad global de las herramientas y conocimientos necesarios para proteger materiales y estructuras.",
+        "our-mission": "Nuestra Misión",
+        "mission1": "El Capítulo Estudiantil de AMPP en Croacia está comprometido a inspirar y guiar a la próxima generación de profesionales en corrosión y materiales en nuestra región. Nuestra misión es crear un entorno de aprendizaje, innovación y colaboración entre estudiantes, líderes de la industria e instituciones académicas.",
+        "mission2": "Nuestro objetivo es brindar oportunidades valiosas para el desarrollo profesional a través de talleres técnicos, conferencias y experiencias prácticas. Al conectar a jóvenes talentos con expertos internacionales, ayudamos a construir una base sólida para futuras contribuciones a una infraestructura más segura y duradera en Croacia y en el mundo.",
+        "starting-point": "Elige tu punto de partida",
+        "already-a-member": "¿Ya eres miembro de AMPP?",
+        "already-a-member1": "Si ya eres miembro de AMPP y estás ubicado en Croacia, tu perfil ya estará vinculado al Capítulo Estudiantil de AMPP Croacia. Para recibir actualizaciones sobre nuestras próximas capacitaciones, eventos o noticias del capítulo, por favor inicia sesión y asegúrate de tener tus preferencias configuradas para recibir estas notificaciones.",
+        "individual": "Membresía Individual",
+        "individual1": "Convertirte en miembro de AMPP te da acceso a oportunidades exclusivas de desarrollo profesional, eventos de networking y recursos de la industria que te ayudarán a avanzar y mantenerte a la vanguardia.",
+        "individual2": "Conéctate con otros profesionales, aprende de líderes del sector y mantente al día con las últimas tendencias y avances a través de tu membresía. Ayuda a dar forma al futuro de la protección y el desempeño de materiales. Tu membresía también incluye descuentos en eventos y acceso a recursos exclusivos solo para miembros.",
+        "individual3": "Si eres nuevo en AMPP, deberás crear una cuenta de usuario para unirte. Si ya eres miembro y deseas renovar tu membresía, o si ya iniciaste sesión, haz clic en el botón de abajo.",
+        "individual4": "crear tu cuenta de usuario para unirte",
+        "individual5": "iniciar sesión",
+        "join-now": "Únete ahora",
+        "corporate": "Membresía Corporativa",
+        "corporate1": "Lleva tu organización al siguiente nivel con una Membresía Corporativa de AMPP. Ser miembro corporativo de AMPP te da visibilidad en la industria y ante los miembros de AMPP en todo el mundo. También proporciona a tus empleados herramientas para mantenerse actualizados y desarrollarse profesionalmente, acceso a eventos de networking, recursos del sector y oportunidades exclusivas de desarrollo profesional que ayudarán a tu organización a avanzar y destacarse.",
+        "corporate2": "Conecta tu organización con miembros de AMPP en todo el mundo mientras aumentas tu visibilidad en el mercado y entre quienes buscan empleo. Una Membresía Corporativa de AMPP aporta un valor tangible a tu organización y a tus empleados.",
+        "student": "Membresía Estudiantil",
+        "student1": "Únete al Capítulo de AMPP Croacia como miembro estudiantil y comienza tu carrera en protección y desempeño de materiales. Esta membresía gratuita está disponible para estudiantes de tiempo completo inscritos en universidades o institutos acreditados, y ofrece acceso a una red global de profesionales, recursos para la carrera y herramientas educativas. Tendrás exposición a la industria a través de seminarios web, pódcast, oportunidades de voluntariado y publicaciones como Materials Performance y CoatingsPro Magazine.",
+        "student2": "Como miembro estudiantil, puedes postularte a becas, obtener descuentos en cursos y eventos, y explorar oportunidades de liderazgo participando en capítulos locales e internacionales. Ya sea que busques ampliar tus conocimientos, hacer crecer tu red de contactos o dar tu primer paso en la industria, la Membresía Estudiantil de AMPP te brinda las herramientas y el apoyo para tener éxito."
+    },
+    
+    de: {
+        "about-ampp": "Über AMPP",
+        "about-ampp1": "Die Association for Materials Protection and Performance (AMPP) ist die weltweit führende Autorität im Bereich Korrosionsschutz und Schutzbeschichtungen. Entstanden aus dem Zusammenschluss von NACE International und SSPC, repräsentiert AMPP eine vereinte Stimme für Tausende von Fachleuten in über 130 Ländern.",
+        "about-ampp2": "AMPP setzt sich dafür ein, das Leben der Menschen weltweit zu verbessern, indem es Infrastruktur, Vermögenswerte und die Umwelt vor den schädlichen Auswirkungen von Korrosion und Verfall schützt. Von Forschung und Ausbildung über Zertifizierungen bis hin zur Normenentwicklung – AMPP stellt der globalen Gemeinschaft Werkzeuge und Wissen zur Verfügung, um Materialien und Strukturen zu sichern.",
+        "our-mission": "Unsere Mission",
+        "mission1": "Die AMPP Student Chapter Kroatien hat es sich zur Aufgabe gemacht, die nächste Generation von Fachkräften im Bereich Korrosion und Werkstoffe in unserer Region zu inspirieren und zu fördern. Unsere Mission ist es, ein Umfeld des Lernens, der Innovation und der Zusammenarbeit zwischen Studierenden, Branchenführern und akademischen Institutionen zu schaffen.",
+        "mission2": "Wir möchten durch technische Workshops, Vorträge und praktische Erfahrungen wertvolle Möglichkeiten zur beruflichen Weiterentwicklung bieten. Indem wir junge Talente mit internationalen Experten vernetzen, legen wir das Fundament für zukünftige Beiträge zu einer sichereren und langlebigeren Infrastruktur in Kroatien und weltweit.",
+        "starting-point": "Wähle deinen Startpunkt",
+        "already-a-member": "Bereits AMPP-Mitglied?",
+        "already-a-member1": "Wenn du bereits AMPP-Mitglied bist und dich in Kroatien befindest, ist dein Profil bereits mit dem AMPP Student Chapter Kroatien verknüpft. Um Updates zu unseren kommenden Schulungen, Veranstaltungen und Nachrichten des Chapters zu erhalten, melde dich bitte an und stelle sicher, dass deine Einstellungen entsprechend gesetzt sind.",
+        "individual": "Einzelmitgliedschaft",
+        "individual1": "Eine AMPP-Mitgliedschaft bietet dir exklusiven Zugang zu beruflichen Weiterbildungsangeboten, Networking-Events und Branchenressourcen, die dir helfen, dich weiterzuentwickeln und der Zeit voraus zu sein.",
+        "individual2": "Vernetze dich mit anderen Fachleuten, lerne von Branchenführern und bleibe durch deine Mitgliedschaft über aktuelle Trends und Entwicklungen informiert. Gestalte die Zukunft des Werkstoffschutzes mit. Deine Mitgliedschaft bietet zudem Rabatte auf Veranstaltungen und Zugang zu exklusiven Mitglieder-Ressourcen.",
+        "individual3": "Wenn du neu bei AMPP bist, solltest du dir ein Benutzerkonto erstellen, um beizutreten. Bist du ein zurückkehrendes Mitglied, das seine Mitgliedschaft verlängern möchte, oder bereits eingeloggt? Klicke einfach auf die Schaltfläche unten.",
+        "individual4": "Benutzerkonto erstellen, um beizutreten",
+        "individual5": "Einloggen",
+        "join-now": "Jetzt beitreten",
+        "corporate": "Unternehmensmitgliedschaft",
+        "corporate1": "Bringe dein Unternehmen mit einer AMPP-Unternehmensmitgliedschaft auf die nächste Stufe. Als Unternehmensmitglied erhältst du weltweite Sichtbarkeit in der Branche und unter AMPP-Mitgliedern. Deinen Mitarbeitenden stehen Werkzeuge zur Verfügung, um auf dem neuesten Stand zu bleiben und sich beruflich weiterzuentwickeln – einschließlich Networking-Veranstaltungen, Branchenressourcen und exklusiven Weiterbildungsmöglichkeiten.",
+        "corporate2": "Verbinde dein Unternehmen mit AMPP-Mitgliedern weltweit und erhöhe gleichzeitig deine Sichtbarkeit im Markt und bei Arbeitssuchenden. Eine AMPP-Unternehmensmitgliedschaft bietet deinem Unternehmen und deinen Mitarbeitenden echten Mehrwert.",
+        "student": "Studentische Mitgliedschaft",
+        "student1": "Tritt dem AMPP Chapter Kroatien als studentisches Mitglied bei und starte deine Karriere im Bereich Werkstoffschutz und -leistung. Diese kostenlose Mitgliedschaft steht Vollzeitstudierenden an anerkannten Hochschulen offen und bietet Zugang zu einem globalen Netzwerk von Fachleuten, Karriereressourcen und Bildungstools. Du erhältst Einblicke in die Branche durch Webinare, Podcasts, ehrenamtliche Tätigkeiten und Fachzeitschriften wie Materials Performance und CoatingsPro Magazine.",
+        "student2": "Als studentisches Mitglied kannst du dich für Stipendien bewerben, erhältst Rabatte auf Kurse und Veranstaltungen und kannst Führungsrollen übernehmen – sowohl lokal als auch international. Egal, ob du dein Wissen erweitern, dein Netzwerk ausbauen oder den ersten Schritt in die Branche machen möchtest – die AMPP-Studentenmitgliedschaft bietet dir die Werkzeuge und Unterstützung, um erfolgreich zu sein."
+    },
+
+    fr : {
+        "about-ampp": "À propos de l'AMPP",
+        "about-ampp1": "L'Association pour la Protection et la Performance des Matériaux (AMPP) est l'autorité mondiale de référence en matière de contrôle de la corrosion et de revêtements protecteurs. Issue de la fusion de NACE International et SSPC, l'AMPP représente une voix unifiée pour des milliers de professionnels dans plus de 130 pays.",
+        "about-ampp2": "L'AMPP s'engage à améliorer la vie des populations à travers le monde en protégeant les infrastructures, les actifs et l’environnement contre les effets néfastes de la corrosion et de la dégradation. De la recherche et la formation à la certification et l’élaboration de normes, l’AMPP fournit à la communauté mondiale les outils et les connaissances nécessaires pour préserver les matériaux et les structures.",
+        "our-mission": "Notre mission",
+        "mission1": "Le Chapitre Étudiant AMPP Croatie s'engage à inspirer et guider la prochaine génération de professionnels dans le domaine de la corrosion et des matériaux dans notre région. Notre mission est de créer un environnement d’apprentissage, d’innovation et de collaboration entre les étudiants, les leaders de l’industrie et les institutions académiques.",
+        "mission2": "Nous visons à offrir des opportunités précieuses de développement professionnel à travers des ateliers techniques, des conférences et des expériences pratiques. En connectant les jeunes talents à des experts internationaux, nous contribuons à poser les bases solides pour un avenir où les infrastructures seront plus sûres et plus durables en Croatie et dans le monde.",
+        "starting-point": "Choisissez votre point de départ",
+        "already-a-member": "Déjà membre de l'AMPP ?",
+        "already-a-member1": "Si vous êtes déjà membre de l'AMPP et que vous êtes basé en Croatie, votre profil est déjà lié au Chapitre Étudiant AMPP Croatie. Pour recevoir des informations sur nos formations, événements à venir ou actualités, veuillez vous connecter et vous assurer que vos préférences sont configurées pour recevoir ces mises à jour.",
+        "individual": "Adhésion individuelle",
+        "individual1": "Devenir membre de l’AMPP vous donne accès à des opportunités exclusives de développement professionnel, à des événements de réseautage et à des ressources industrielles qui vous aideront à progresser et à rester à la pointe.",
+        "individual2": "Échangez avec d'autres professionnels, apprenez auprès des leaders du secteur et restez informé des dernières tendances et avancées grâce à votre adhésion. Participez à façonner l'avenir de la protection et de la performance des matériaux. Votre adhésion inclut également des réductions sur les événements et l'accès à des ressources exclusives réservées aux membres.",
+        "individual3": "Si vous découvrez l’AMPP, vous devrez créer un compte utilisateur pour vous inscrire. Si vous êtes déjà membre et souhaitez renouveler votre adhésion, ou si vous êtes déjà connecté, cliquez sur le bouton ci-dessous.",
+        "individual4": "créer votre compte utilisateur pour adhérer",
+        "individual5": "se connecter",
+        "join-now": "Adhérez maintenant",
+        "corporate": "Adhésion entreprise",
+        "corporate1": "Faites progresser votre organisation grâce à une adhésion entreprise AMPP. Être membre entreprise de l’AMPP vous offre une visibilité dans l’industrie et auprès des membres de l’AMPP dans le monde entier. Cela fournit également à vos employés des outils pour rester à jour, se développer professionnellement, participer à des événements de réseautage, accéder à des ressources sectorielles et profiter d’opportunités exclusives de développement.",
+        "corporate2": "Connectez votre organisation avec les membres de l’AMPP dans le monde entier tout en augmentant votre visibilité sur le marché et auprès des chercheurs d’emploi. Une adhésion entreprise AMPP offre une réelle valeur ajoutée à votre entreprise et à vos collaborateurs.",
+        "student": "Adhésion étudiante",
+        "student1": "Rejoignez le Chapitre AMPP Croatie en tant qu’étudiant membre et lancez votre carrière dans la protection et la performance des matériaux. Cette adhésion gratuite est ouverte aux étudiants à temps plein inscrits dans des universités ou établissements accrédités, et donne accès à un réseau mondial de professionnels, à des ressources pour la carrière et à des outils pédagogiques. Vous serez exposé au secteur à travers des webinaires, des podcasts, des opportunités de bénévolat et des publications comme Materials Performance et CoatingsPro Magazine.",
+        "student2": "En tant que membre étudiant, vous pouvez postuler à des bourses, bénéficier de réductions sur les cours et les événements, et découvrir des opportunités de leadership en vous engageant dans les chapitres locaux et internationaux. Que vous souhaitiez approfondir vos connaissances, élargir votre réseau ou faire vos premiers pas dans l’industrie, l’adhésion étudiante à l’AMPP vous apporte les outils et le soutien nécessaires à votre réussite."
+    },
+
+    it: {
+        "about-ampp": "Informazioni su AMPP",
+        "about-ampp1": "L'Associazione per la Protezione e le Prestazioni dei Materiali (AMPP) è l'autorità mondiale leader nel controllo della corrosione e nei rivestimenti protettivi. Nata dalla fusione tra NACE International e SSPC, AMPP rappresenta una voce unificata per migliaia di professionisti in oltre 130 paesi.",
+        "about-ampp2": "AMPP si dedica a migliorare la vita delle persone in tutto il mondo proteggendo infrastrutture, beni e l'ambiente dagli effetti dannosi della corrosione e del degrado. Dalla ricerca e formazione alla certificazione e allo sviluppo di standard, AMPP lavora per fornire alla comunità globale gli strumenti e le conoscenze necessari per proteggere materiali e strutture.",
+        "our-mission": "La nostra missione",
+        "mission1": "L'AMPP Student Chapter Croazia si impegna a ispirare e guidare la prossima generazione di professionisti nel campo della corrosione e dei materiali nella nostra regione. La nostra missione è creare un ambiente di apprendimento, innovazione e collaborazione tra studenti, leader dell'industria e istituzioni accademiche.",
+        "mission2": "Il nostro obiettivo è offrire opportunità significative di sviluppo professionale attraverso workshop tecnici, conferenze ed esperienze pratiche. Collegando giovani menti con esperti globali, contribuiamo a costruire una solida base per futuri contributi a infrastrutture più sicure e durature in Croazia e nel mondo.",
+        "starting-point": "Scegli il tuo punto di partenza",
+        "already-a-member": "Sei già un membro AMPP?",
+        "already-a-member1": "Se sei già un membro AMPP e ti trovi in Croazia, il tuo profilo sarà già collegato all'AMPP Student Chapter Croazia. Per ricevere aggiornamenti sui nostri corsi di formazione, eventi o notizie del capitolo, effettua il login e assicurati di aver impostato correttamente le preferenze per ricevere queste comunicazioni.",
+        "individual": "Adesione individuale",
+        "individual1": "Diventare membro AMPP ti offre accesso a esclusive opportunità di sviluppo professionale, eventi di networking e risorse del settore che ti aiuteranno a progredire nella tua carriera.",
+        "individual2": "Connettiti con altri professionisti, impara dai leader del settore e rimani aggiornato sulle ultime tendenze e innovazioni grazie alla tua adesione, contribuendo a modellare il futuro della protezione e delle prestazioni dei materiali. L’adesione fornisce anche sconti su eventi e l’accesso a risorse riservate esclusivamente ai membri.",
+        "individual3": "Se sei nuovo su AMPP, ti consigliamo di creare un account. Se sei un membro di ritorno e desideri rinnovare la tua iscrizione oppure sei già connesso, clicca il pulsante qui sotto.",
+        "individual4": "crea il tuo account utente per iscriverti",
+        "individual5": "accedi",
+        "join-now": "Iscriviti ora",
+        "corporate": "Adesione aziendale",
+        "corporate1": "Porta la tua organizzazione a un livello superiore con un'adesione aziendale AMPP. Essere membri aziendali AMPP offre visibilità nel settore e tra i membri AMPP in tutto il mondo. Fornisce inoltre ai tuoi dipendenti strumenti per aggiornarsi, svilupparsi professionalmente, partecipare a eventi di networking e accedere a risorse e opportunità esclusive.",
+        "corporate2": "Collega la tua organizzazione con membri AMPP in tutto il mondo aumentando la tua visibilità sul mercato e tra i candidati. Un’adesione aziendale AMPP offre un valore concreto alla tua organizzazione e ai tuoi dipendenti.",
+        "student": "Adesione studentesca",
+        "student1": "Unisciti all'AMPP Chapter Croazia come membro studente e inizia la tua carriera nella protezione e nelle prestazioni dei materiali. Questa adesione gratuita è aperta agli studenti a tempo pieno iscritti in università o college accreditati e offre accesso a una rete globale di professionisti, risorse per la carriera e strumenti educativi. Avrai esposizione al settore attraverso webinar, podcast, opportunità di volontariato e pubblicazioni come Materials Performance e CoatingsPro Magazine.",
+        "student2": "Come membro studente, puoi candidarti per borse di studio, ricevere sconti su corsi ed eventi, ed esplorare opportunità di leadership partecipando ai capitoli locali e internazionali. Che tu voglia ampliare le tue conoscenze, far crescere il tuo network o muovere i primi passi nel settore, l’adesione studentesca AMPP ti fornisce gli strumenti e il supporto per avere successo."
+    },
+
+    nl: {
+        "about-ampp": "Over AMPP",
+        "about-ampp1": "De Association for Materials Protection and Performance (AMPP) is ’s werelds toonaangevende autoriteit op het gebied van corrosiebestrijding en beschermende coatings. AMPP is ontstaan uit de fusie van NACE International en SSPC en vertegenwoordigt één stem voor duizenden professionals in meer dan 130 landen.",
+        "about-ampp2": "AMPP zet zich in om het leven van mensen wereldwijd te verbeteren door infrastructuur, eigendommen en het milieu te beschermen tegen de schadelijke effecten van corrosie en degradatie. Van onderzoek en training tot certificering en standaardontwikkeling, AMPP biedt de wereldgemeenschap de tools en kennis om materialen en structuren te beschermen.",
+        "our-mission": "Onze Missie",
+        "mission1": "De AMPP Student Chapter Kroatië is toegewijd aan het inspireren en begeleiden van de volgende generatie professionals in corrosie en materialen in onze regio. Onze missie is het creëren van een leeromgeving vol innovatie en samenwerking tussen studenten, industrie-experts en academische instellingen.",
+        "mission2": "We streven ernaar waardevolle mogelijkheden voor professionele ontwikkeling te bieden via technische workshops, lezingen en praktische ervaringen. Door jonge geesten te verbinden met wereldwijde experts helpen we een stevige basis te leggen voor toekomstige bijdragen aan veiligere, duurzamere infrastructuren in Kroatië en de wereld.",
+        "starting-point": "Kies je startpunt",
+        "already-a-member": "Ben je al AMPP-lid?",
+        "already-a-member1": "Als je al een AMPP-lid bent en in Kroatië woont, is je profiel al verbonden met de AMPP Student Chapter Kroatië. Log in en zorg ervoor dat je voorkeuren zijn ingesteld om updates over onze trainingen, evenementen en nieuws te ontvangen.",
+        "individual": "Individueel Lidmaatschap",
+        "individual1": "Lid worden van AMPP geeft je toegang tot exclusieve mogelijkheden voor professionele ontwikkeling, netwerkevenementen en branche-informatie die je helpen voorop te lopen.",
+        "individual2": "Maak contact met andere professionals, leer van leiders in de industrie en blijf op de hoogte van de laatste trends en ontwikkelingen. Je lidmaatschap helpt niet alleen je carrière, maar ook bij het vormgeven van de toekomst van materiaalbescherming en -prestaties. Leden ontvangen ook kortingen op evenementen en toegang tot exclusieve content.",
+        "individual3": "Ben je nieuw bij AMPP? Maak dan een account aan. Ben je al lid en wil je je lidmaatschap verlengen of ben je al ingelogd? Klik dan op de knop hieronder.",
+        "individual4": "maak je gebruikersaccount aan om lid te worden",
+        "individual5": "inloggen",
+        "join-now": "Word nu lid",
+        "corporate": "Bedrijfslidmaatschap",
+        "corporate1": "Breng je organisatie naar een hoger niveau met een AMPP Bedrijfslidmaatschap. Als bedrijfslid krijg je zichtbaarheid binnen de branche en toegang tot AMPP-leden wereldwijd. Je medewerkers profiteren van professionele ontwikkelingsmogelijkheden, netwerkevenementen en branchebronnen.",
+        "corporate2": "Verbind je organisatie met AMPP-leden wereldwijd en vergroot je zichtbaarheid op de markt en bij werkzoekenden. Een AMPP Bedrijfslidmaatschap levert tastbare waarde voor zowel je bedrijf als je medewerkers.",
+        "student": "Studentlidmaatschap",
+        "student1": "Word studentlid van AMPP Kroatië en geef je carrière in materiaalbescherming en -prestaties een vliegende start. Dit gratis lidmaatschap is beschikbaar voor voltijdstudenten aan erkende universiteiten of hogescholen. Je krijgt toegang tot een wereldwijd netwerk van professionals, loopbaanbronnen en educatieve tools. Je doet ervaring op via webinars, podcasts, vrijwilligerswerk en vakbladen zoals Materials Performance en CoatingsPro Magazine.",
+        "student2": "Als studentlid kun je je aanmelden voor beurzen, korting krijgen op cursussen en evenementen, en leiderschapskansen verkennen via lokale en internationale chapters. Of je nu je kennis wilt uitbreiden, je netwerk wilt laten groeien of je eerste stap in de industrie wilt zetten — het studentlidmaatschap van AMPP biedt de middelen en ondersteuning om te slagen."
+}
+
+};
+
+function switchLanguage(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+
+    elements.forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (langData[lang] && langData[lang][key]) {
+            el.textContent = langData[lang][key];
+        }
+    });
+}
+
+const translation = translations[language][key] || translations['en'][key] || `[${key}]`;

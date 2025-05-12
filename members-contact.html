@@ -16,6 +16,8 @@
         content="AMPP Croatia Student Chapter is a student organization dedicated to promoting the field of corrosion control and protective coatings. We aim to provide students with opportunities for professional development, networking, and hands-on experience in the industry. Join us to learn more about corrosion prevention and protective coatings!">
     <meta name="keywords"
         content="AMPP, Croatia, Student Chapter, corrosion control, protective coatings, professional development, networking, hands-on experience">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 </head>
 
 <body>
@@ -25,50 +27,94 @@
 
 
     <section class="board-members">
-      <h2>BOARD MEMBERS</h2>
+      <h1>BOARD MEMBERS</h1>
       <h3>AMPP CHAPTER CROATIA</h3>
 
       <div class="top-member">
         <div class="member-card">
-          <img src="./IMG/Members/Arezoo-Assarian.png" alt="Arezoo" class="profile-pic">
+          <img src="./IMG/Members/Default_pfp.svg.webp" alt="Arezoo" class="profile-pic">
           <h4>Chapter chair</h4>
-          <p><strong>Arezoo</strong></p>
-          <a href="mailto:amppmail" class="mail-link">amppmail</a>
+          <p><strong>Kasra Miri</strong></p>
+          <a href="mailto:amppmail" class="mail-link">chair@amppcroatia.com</a>
         </div>
       </div>
 
       <div class="member-container">
         <div class="member-card">
-          <img src="./IMG/Default_pfp.svg.webp" alt="Matej" class="profile-pic">
+          <img src="./IMG/Members/Default_pfp.svg.webp" alt="Matej" class="profile-pic">
           <h4>Chapter Vice Chair</h4>
           <p>Benjamin David Lapple</p>
-          <a href="mailto:amppmail" class="mail-link">blapple@ampp.com</a>
+          <a href="mailto:amppmail" class="mail-link">vicechair@amppcroatia.com</a>
         </div>
 
         <div class="member-card">
-          <img src="./IMG/Default_pfp.svg.webp" alt="Goran" class="profile-pic">
+          <img src="./IMG/Members/Default_pfp.svg.webp" alt="Goran" class="profile-pic">
           <h4>Chapter Secretary/Financial Liaison</h4>
           <p>Goran Omid Kolarac</p>
-          <a href="mailto:amppmail" class="mail-link">gkolarac@ampp.com</a>
+          <a href="mailto:amppmail" class="mail-link">treasurer@amppcroatia.com</a>
         </div>
 
         <div class="member-card">
-          <img src="./IMG/Default_pfp.svg.webp" alt="Kasra" class="profile-pic">
-          <h4>Chapter Chair</h4>
-          <p>Kasra Miri</p>
-          <a href="mailto:amppmail" class="mail-link">kmiri@ampp.com</a>
+          <img src="./IMG/Members/Default_pfp.svg.webp" alt="Kasra" class="profile-pic">
+          <h4>Chapter Vice Chair</h4>
+          <p>Nikolina</p>
+          <a href="mailto:amppmail" class="mail-link">vicechair@amppcroatia.com</a>
         </div>
 
         <div class="member-card">
-          <img src="./IMG/Default_pfp.svg.webp" alt="Vito" class="profile-pic">
+          <img src="./IMG/Members/Default_pfp.svg.webp" alt="Vito" class="profile-pic">
           <h4>Chapter IT</h4>
           <p>Vito Strmečki</p>
-          <a href="mailto:amppmail" class="mail-link">vstrmecki@ampp.com</a>
+          <a href="mailto:amppmail" class="mail-link">infotech@amppcroatia.com</a>
         </div>
     </section>
 
 
-   
+    <div class="form-container">
+      <section class="emails-info">
+        <h2>How Can We Help You?</h2>
+        <div class="emails-list">
+          <div class="email-box">
+            <h3>📄 Registration</h3>
+            <p>Questions about student membership or event sign-ups? Reach us at <strong>registration@amppcroatia.com</strong>.</p>
+          </div>
+          <div class="email-box">
+            <h3>ℹ️ General Info</h3>
+            <p>For general inquiries or collaborations, contact <strong>info@amppcroatia.com</strong>.</p>
+          </div>
+          <div class="email-box">
+            <h3>🛠️ Technical Services</h3>
+            <p>Need support or consultation? Write to <strong>service@amppcroatia.com</strong>.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="contact-section">
+        <div class="contact-image"></div>
+        <form class="contact-form" method="POST" action="form.php" id="contact-form">
+          <h2>Contact Form</h2>
+  
+          <label for="recipient">Send To</label>
+          <select id="recipient" name="recipient" required>
+            <option value="" disabled selected>Select a department</option>
+            <option value="registration@amppcroatia.com">📄 Registration</option>
+            <option value="info@amppcroatia.com">ℹ️ General Info</option>
+            <option value="service@amppcroatia.com">🛠️ Technical Services</option>
+          </select>
+  
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+  
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+  
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit" value="Send">Send Message</button>
+        </form>
+      </section>
+    </div>
 
 
     <div id="footer-container"></div>

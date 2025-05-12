@@ -6,6 +6,7 @@
   }
   
   .main-title {
+    color: #c00;
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
@@ -22,7 +23,7 @@
   .existing-member p {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
   
@@ -81,3 +82,55 @@
     background-color: #8e0000;
   }
   
+
+/* Section container - default layout */
+.section {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Reverse layout: image on left, text on right */
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Content (text) and image blocks */
+.section-content,
+.section-image {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+/* Responsive image styling */
+.section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.title{
+  color: #c00;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+/* Stack text above image on small screens */
+@media (max-width: 550px) {
+  .section,
+  .section.reverse {
+    flex-direction: column;
+  }
+
+  .section-content,
+  .section-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
