@@ -17,9 +17,41 @@ function initHeader() {
   headerClose = document.getElementById("header-close");
 }
 
+function initFooter() {
+  const langToggle = document.getElementById("lang-toggle");
+  const langPanel = document.getElementById("lang-panel");
+
+  if (!langToggle || !langPanel) return;
+
+  langToggle.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent immediate close
+    langPanel.classList.toggle("hidden");
+  });
+
+  // Close panel if clicked outside
+  document.addEventListener("click", (e) => {
+    if (!langPanel.contains(e.target) && !langToggle.contains(e.target)) {
+      langPanel.classList.add("hidden");
+    }
+  });
+
+  // Optional: handle language selection
+  langPanel.querySelectorAll("li").forEach((li) => {
+    li.addEventListener("click", () => {
+      const selectedLang = li.getAttribute("data-lang");
+      localStorage.setItem("language", selectedLang);
+      console.log("Language switched to:", selectedLang);
+
+      // Call your language switch logic here
+      // updateLanguage(selectedLang);
+    });
+  });
+}
+
 // First load the header, then initialize header-related functions
 loadHTML("#header-container", "../HTMLs/header.html", initHeader);
-loadHTML("#footer-container", "../HTMLs/footer.html");
+loadHTML("#footer-container", "../HTMLs/footer.html", initFooter);
+loadHTML("#language-select", "../HTMLs/language.html");
 
 // JavaScript to toggle the navbar
 let headerLinks = document.getElementById("header-links");

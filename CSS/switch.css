@@ -1,0 +1,58 @@
+/* Container in top-right */
+.language-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Globe button */
+.lang-globe {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Slide-out panel */
+.lang-panel {
+  position: fixed;
+  top: 0;
+  right: -240px;
+  width: 200px;
+  height: 100%;
+  background: white;
+  border-left: 1px solid #ccc;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+.lang-panel h4 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.lang-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lang-panel ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.lang-panel ul li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show panel */
+.lang-panel.show {
+  right: 0;
+}
+
