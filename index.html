@@ -39,7 +39,6 @@
     overflow-x: hidden;
   }
 
-  /* noise overlay */
   body::before {
     content: '';
     position: fixed;
@@ -58,7 +57,6 @@
     z-index: 1;
   }
 
-  /* HEADER */
   .header {
     margin-bottom: 64px;
     border-bottom: 1px solid var(--border);
@@ -101,7 +99,6 @@
     text-transform: uppercase;
   }
 
-  /* PROGRESS BAR */
   .progress-section {
     background: var(--bg2);
     border: 1px solid var(--border);
@@ -137,7 +134,6 @@
     width: 0%;
   }
 
-  /* RULE BOX */
   .rule-box {
     border-left: 3px solid var(--p0);
     padding: 16px 20px;
@@ -161,7 +157,6 @@
 
   .rule-box strong { color: var(--text); }
 
-  /* PHASE */
   .phase {
     margin-bottom: 56px;
     position: relative;
@@ -249,7 +244,6 @@
     border-radius: 4px;
   }
 
-  /* SECTIONS */
   .section {
     margin-bottom: 28px;
   }
@@ -264,7 +258,6 @@
     border-bottom: 1px solid var(--border);
   }
 
-  /* CHECKLIST */
   .checklist { list-style: none; }
 
   .checklist li {
@@ -321,7 +314,6 @@
     display: block;
   }
 
-  /* CHECKPOINTS */
   .checkpoints {
     background: var(--bg3);
     border: 1px solid var(--border);
@@ -377,7 +369,6 @@
 
   .checkpoint-item.done span { text-decoration: line-through; color: var(--muted); }
 
-  /* DIVIDER */
   .phase-divider {
     display: flex;
     align-items: center;
@@ -395,7 +386,6 @@
     background: var(--border);
   }
 
-  /* DONT TOUCH */
   .warning-box {
     border: 1px solid rgba(248,113,113,0.3);
     background: rgba(248,113,113,0.05);
@@ -424,7 +414,6 @@
   .warning-item:last-child { border-bottom: none; }
   .warning-item::before { content: '✗'; color: var(--p4); flex-shrink: 0; }
 
-  /* FOOTER */
   .footer {
     margin-top: 80px;
     padding-top: 32px;
@@ -437,7 +426,6 @@
     gap: 8px;
   }
 
-  /* SAVE NOTICE */
   .save-notice {
     position: fixed;
     bottom: 24px;
@@ -496,10 +484,10 @@
   <!-- PHASE 0 -->
   <div class="phase phase-0 open" id="phase-0">
     <div class="phase-header" onclick="togglePhase('phase-0')">
-      <div class="phase-num">Phase 0</div>
+      <div class="phase-num">Phase 0 · Complete</div>
       <div class="phase-title-block">
         <div class="phase-title">Foundation Hardening</div>
-        <div class="phase-meta">Timeline: 6 weeks max · Start: Now</div>
+        <div class="phase-meta">Closed: June 2026 · Phase 1 unlocked</div>
       </div>
       <div class="phase-toggle">+</div>
     </div>
@@ -511,49 +499,49 @@
       <div class="section">
         <div class="section-title">// Docker Compose Depth</div>
         <ul class="checklist">
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Rebuild Audiobookshelf from scratch using a proper docker-compose.yml<span class="check-note">Don't copy-paste. Write it yourself. Understand every line.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Implement named volumes and bind mounts correctly<span class="check-note">Know the difference — when to use which and why.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Add healthchecks and restart policies to all containers<span class="check-note">restart: unless-stopped is your friend. Healthchecks define when a container is actually "ready".</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Use .env files for environment variables — no hardcoded secrets<span class="check-note">Every password, port, and domain in a .env file. Add .env to .gitignore immediately.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Set up a custom bridge network in Docker Compose<span class="check-note">Services on the same network talk by container name, not IP. Understand why.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Learn docker logs, docker exec, docker inspect commands cold<span class="check-note">You should be able to debug any container issue without a GUI.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Deploy Portainer for container management UI<span class="check-note">Useful visual layer, but always know the CLI equivalent of what you're clicking.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Rebuild Audiobookshelf from scratch using a proper docker-compose.yml<span class="check-note">Don't copy-paste. Write it yourself. Understand every line.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Implement named volumes and bind mounts correctly<span class="check-note">Know the difference — when to use which and why.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Add healthchecks and restart policies to all containers<span class="check-note">restart: unless-stopped is your friend. Healthchecks define when a container is actually "ready".</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Use .env files for environment variables — no hardcoded secrets<span class="check-note">Every password, port, and domain in a .env file. Add .env to .gitignore immediately.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Set up a custom bridge network in Docker Compose<span class="check-note">Services on the same network talk by container name, not IP. Understand why.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Learn docker logs, docker exec, docker inspect commands cold<span class="check-note">You should be able to debug any container issue without a GUI.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Deploy Portainer for container management UI<span class="check-note">Useful visual layer, but always know the CLI equivalent of what you're clicking.</span></div></li>
         </ul>
       </div>
 
       <div class="section">
         <div class="section-title">// Linux Administration</div>
         <ul class="checklist">
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Master systemd — enable, disable, start, stop, status, journalctl<span class="check-note">Every service on Linux is managed by systemd. You need this daily.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Harden SSH — disable root login, use key-based auth only, change default port<span class="check-note">Your future self will thank you when this becomes habit.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Configure UFW firewall rules — only open what you need<span class="check-note">Default deny inbound, allow only specific ports. Understand what each rule does.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Set up automated backups with rsync + cron<span class="check-note">Write a bash script that backs up your Docker volumes to one of your HDDs on a schedule.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Understand file permissions deeply — chmod, chown, umask<span class="check-note">Be able to explain rwxr-xr-x without looking it up.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Learn disk management — lsblk, df, du, mount, fstab<span class="check-note">You have 8TB of HDDs. Make sure they mount on boot and you can manage them properly.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Master systemd — enable, disable, start, stop, status, journalctl<span class="check-note">Every service on Linux is managed by systemd. You need this daily.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Harden SSH — disable root login, use key-based auth only, change default port<span class="check-note">Your future self will thank you when this becomes habit.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Configure UFW firewall rules — only open what you need<span class="check-note">Default deny inbound, allow only specific ports. Understand what each rule does.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Set up automated backups with rsync + cron<span class="check-note">Write a bash script that backs up your Docker volumes to one of your HDDs on a schedule.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Understand file permissions deeply — chmod, chown, umask<span class="check-note">Be able to explain rwxr-xr-x without looking it up.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Learn disk management — lsblk, df, du, mount, fstab<span class="check-note">You have 8TB of HDDs. Make sure they mount on boot and you can manage them properly.</span></div></li>
         </ul>
       </div>
 
       <div class="section">
         <div class="section-title">// Core Stack to Deploy (on Ubuntu, before Proxmox)</div>
         <ul class="checklist">
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Deploy Nginx Proxy Manager<span class="check-note">Your reverse proxy. All services will sit behind this. Handles SSL certs automatically via Let's Encrypt.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Deploy Pi-hole or AdGuard Home for local DNS<span class="check-note">Now your services get real hostnames like audiobookshelf.local instead of 192.168.x.x:port</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Deploy Uptime Kuma for monitoring<span class="check-note">Set up alerts for all your services. First time something goes down and you get notified before you notice — that's the moment monitoring clicks.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Deploy WireGuard VPN<span class="check-note">So you can securely reach your homelab from your laptop remotely. Use wg-easy for a simpler setup initially.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Set up a basic dashboard (Homarr or Heimdall)<span class="check-note">One page with links to all your services. Looks good, forces you to organize what you're running.</span></div></li>
-          <li onclick="toggleCheck(this)"><div class="check-box">✓</div><div class="check-text">Start a documentation repo (Git + Markdown)<span class="check-note">Architecture diagram, service list, network map, what broke and how you fixed it. This is non-negotiable.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Deploy Nginx Proxy Manager<span class="check-note">Your reverse proxy. All services will sit behind this. Handles SSL certs automatically via Let's Encrypt.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Deploy Pi-hole or AdGuard Home for local DNS<span class="check-note">Now your services get real hostnames like audiobookshelf.local instead of 192.168.x.x:port</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Deploy Uptime Kuma for monitoring<span class="check-note">Set up alerts for all your services. First time something goes down and you get notified before you notice — that's the moment monitoring clicks.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Deploy WireGuard VPN<span class="check-note">Covered via Tailscale — same security goal, works behind ISP-locked ONT (no port forwarding required). WireGuard deferred to Phase 3 if a self-hosted VPN endpoint becomes needed.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Set up a basic dashboard (Homarr or Heimdall)<span class="check-note">One page with links to all your services. Looks good, forces you to organize what you're running.</span></div></li>
+          <li onclick="toggleCheck(this)" class="done"><div class="check-box">✓</div><div class="check-text">Start a documentation repo (Git + Markdown)<span class="check-note">Architecture diagram, service list, network map, what broke and how you fixed it. This is non-negotiable.</span></div></li>
         </ul>
       </div>
 
       <div class="checkpoints">
         <div class="checkpoint-title">// Exit Checkpoints — don't move to Phase 1 until all green</div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>Can recover a broken container from scratch without Googling the basics</span></div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>All services survive a full system reboot automatically</span></div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>Backups are automated and you've tested restoring from them</span></div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>You can reach your homelab from your laptop via WireGuard</span></div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>You can explain your entire network setup to someone without checking anything</span></div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>Documentation repo exists with at least a network map and service list</span></div>
-        <div class="checkpoint-item" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>You stop fearing logs — they're your first debugging instinct</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>Can recover a broken container from scratch without Googling the basics</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>All services survive a full system reboot automatically</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>Backups are automated and you've tested restoring from them</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>You can reach your homelab from your laptop via WireGuard (covered by Tailscale)</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>You can explain your entire network setup to someone without checking anything</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>Documentation repo exists with at least a network map and service list</span></div>
+        <div class="checkpoint-item done" onclick="toggleCp(this)"><div class="cp-box">✓</div><span>You stop fearing logs — they're your first debugging instinct</span></div>
       </div>
     </div>
   </div>
@@ -830,17 +818,6 @@
   }
 
   function loadProgress() {
-    const done = JSON.parse(localStorage.getItem('roadmap-checks') || '[]');
-    const cpDone = JSON.parse(localStorage.getItem('roadmap-cps') || '[]');
-
-    done.forEach(key => {
-      const [phaseId, , idx] = key.split('-check-').join('-').split('-').reduce((a, c, i, arr) => {
-        if (i === 0) return [arr.slice(0, arr.indexOf('check') ).join('-'), arr[arr.indexOf('check') + 1]];
-        return a;
-      }, []);
-    });
-
-    // Simpler reload
     const savedChecks = JSON.parse(localStorage.getItem('roadmap-checks') || '[]');
     const savedCps = JSON.parse(localStorage.getItem('roadmap-cps') || '[]');
 
